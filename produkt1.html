@@ -18,7 +18,7 @@
         </div>
         <div class="header__main">
             <div class="header__main--flex container--l">
-                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/Book & dice Test gul.png" alt="Färdtjänst logo"></a>
+                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/bd-logo-yellow.svg" alt="Färdtjänst logo"></a>
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
@@ -61,7 +61,7 @@
 
     <!-- Main product -->
      <section class="main-product container--l">
-        <article class="main-product__images">
+        <div class="main-product__images">
             <div>
                 <div class="main-product__carousel" data-flickity='{"cellAlign": "center", "contain": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
                     <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
@@ -77,8 +77,8 @@
             
             
 
-        </article>
-        <article class="main-product__info">
+        </div>
+        <div class="main-product__info">
             <h1>Smart 10</h1>
             <hr class="hr--gray--small--left">
             <div class="main-product__price">
@@ -87,7 +87,7 @@
             </div>
             <p class="main-product__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod facilis error molestiae dolorum accusamus iste pariatur, perferendis natus fuga.</p>
             <div class="main-product__input">
-                <input type="number" name="antal" id="antal" value="1">
+                <input type="number" aria-label="antal" name="antal" id="antal" value="1">
                 <button class="button--primary--blue">Lägg i kundvagn</button>
             </div>
             <div class="main-product__payment-badge">
@@ -99,7 +99,7 @@
                 <p>ISBN: 10321031</p>
                 <p>Utgivningsår: 2020</p>
             </div>
-        </article>
+        </div>
      </section>
     <!-- Products -->
     <hr class="hr--gray">
@@ -107,7 +107,7 @@
         <h2>Liknande produkter</h2>
         <hr>
         <div class="products__container">
-            <article class="product-card">
+            <div class="product-card">
                 <div class="product-card__image--box">
                     <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
@@ -121,8 +121,8 @@
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <div class="product-card">
                 <div class="product-card__image--box">
                     <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
@@ -136,8 +136,8 @@
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <div class="product-card">
                 <div class="product-card__image--box">
                     <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
@@ -151,8 +151,8 @@
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <div class="product-card">
                 <div class="product-card__image--box">
                     <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
@@ -166,7 +166,7 @@
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
+            </div>
         </div>
     </section>
     <hr class="hr--gray">
@@ -174,7 +174,7 @@
         <div class="container--l">
             <h2>Missa inte en nyhet</h2>
             <p class="cta__text">Prenumerera på vårt nyhetsbrev för att vara först med de senaste nyheterna och ta del av de bästa erbjudandena.</p>
-            <form id="newsletter__form" action="">
+            <form id="newsletter__form" action="#">
                 <label for="email">E-postadress:</label>
                 <input type="email" name="Epostadress" id="email">
                 <button type="submit" class="button--primary--blue">Prenumerera</button>

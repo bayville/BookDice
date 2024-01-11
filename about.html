@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem - Book & Dice</title>
+    <title>Book & Dice</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +30,11 @@
                     </button>
                     <!-- Navigation List -->
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
                         <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
                         <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
+                        <li class="nav__item"><a href="pussels.html" class="nav__link">Pussel</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link--active">Om oss</a></li>
                     </ul>
                 </nav>
                 <div class="header__main--icon-wrapper">
@@ -52,43 +53,31 @@
         </div>
     </header>
     <main>
-        <section class="main-carousel">
-            <div class="carousel-cell">
-                <div class="carousel__textbox container--l">
-                    <h1>Book & Dice</h1>
-                    <h2>Rean har startat</h2>
-                    <a href="#" class="button--primary carousel__button">Visa produkter</a>
-                </div>
-                <img src="./img/michal-parzuchowski-geNNFqfvw48-unsplash.jpg" class="carousel__image" alt="">
-
-            </div>
-            <div class="carousel-cell">...</div>
-            <div class="carousel-cell">...</div>
-        </section>
-    <div class="categories container--l">
-        <article class="categories__card">
-            <a href=""><h2>Böcker</h2></a>
-        </article>
-        <article class="categories__card">
-            <a href=""><h2>Spel</h2></a>
-        </article>
-        <article class="categories__card">
-            <a href=""><h2>Pussel</h2></a>
-        </article>
-    </div>
-    <hr class="hr--gray">
+    <!-- Breadcrumbs -->
+     <div class="breadcrumbs container--l">
+        <p class="breadcrumbs__text">
+            <a href="index.html"><span>Hem</span></a> / <span>Om oss</span>
+        </p>
+     </div>
+     
+     <section class="about container--l">
+         <h1 class="categories__title">Om oss</h1>
+         <hr>
+         <h2>Om Dice & Books</h2>
+         <p class="about__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum eius adipisci possimus ut ea veniam, deleniti nulla saepe sapiente omnis quidem impedit rem culpa temporibus iusto eos, tenetur minima ipsa nam excepturi cupiditate. Consectetur voluptate asperiores, laudantium ullam ea neque commodi iure. Dolore quos quasi voluptatum porro voluptatem facere maxime modi corporis. Pariatur, repudiandae temporibus? Sit, magni reiciendis? Impedit exercitationem quia magni quod dignissimos placeat deserunt, eaque odit alias accusantium rem blanditiis adipisci deleniti error veniam a labore, nisi cupiditate ipsum iste fuga? Amet et quidem maxime quos! Totam earum similique repellendus possimus impedit architecto itaque, suscipit dolor est.</p>
+     </section>
+     <hr class="hr--gray">
+    <!-- Products -->
     <section class="products container--l">
-        <h2>Nya produkter</h2>
-        <hr>
         <div class="products__container">
             <article class="product-card">
                 <div class="product-card__image--box">
-                    <a href="./produkt1.html"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
                         <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
@@ -156,7 +145,7 @@
 
         </div>
     </section>
-    </main>    
+    </main>
     <footer>
         <div class="container--l grid--two-column">
             <div class="footer__contact">

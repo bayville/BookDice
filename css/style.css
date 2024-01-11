@@ -164,7 +164,7 @@ hr{
 }
 
 .header__top-bar{
-    background-color: var(--accent-color);
+    background-color: var(--product--background);
     width: 100%;
     text-align: center;
 }
@@ -553,12 +553,26 @@ hr{
     border-top: 2px dashed var(--product--background);
 }
 
+/* Categories page */
+.categories__title{
+    color: var(--main-color);
+    margin-top: 0;
+}
+
+
+/* About page */
+
+.about__body{
+    max-width: 60ch;
+    margin: 0;
+}
+
 /* Footer */
 
 footer{
     background-color: var(--main-color);
     margin-top: auto;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     color: var(--text-color-light);
     line-height: 1;
 }
@@ -675,7 +689,7 @@ footer p {
     /* Footer */
     
     footer{
-        padding: 1em;
+        padding: 2em 2em;
         margin-top: auto;
         line-height: 1;
     }
