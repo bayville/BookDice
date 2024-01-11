@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem - Book & Dice</title>
+    <title>Book & Dice</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,43 +52,69 @@
         </div>
     </header>
     <main>
-        <section class="main-carousel">
-            <div class="carousel-cell">
-                <div class="carousel__textbox container--l">
-                    <h1>Book & Dice</h1>
-                    <h2>Rean har startat</h2>
-                    <a href="#" class="button--primary carousel__button">Visa produkter</a>
-                </div>
-                <img src="./img/michal-parzuchowski-geNNFqfvw48-unsplash.jpg" class="carousel__image" alt="">
+    <!-- Breadcrumbs -->
+     <div class="breadcrumbs container--l">
+        <p class="breadcrumbs__text">
+            <a href="index.html"><span>Hem</span></a> / <a href="books.html"><span>Böcker</span></a> / <span>Produkt 1</span>
+        </p>
+     </div>
 
+    <!-- Main product -->
+     <section class="main-product container--l">
+        <article class="main-product__images">
+            <div>
+                <div class="main-product__carousel" data-flickity='{"cellAlign": "center", "contain": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
+                    <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
+                    <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
+                    <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
+                </div>
             </div>
-            <div class="carousel-cell">...</div>
-            <div class="carousel-cell">...</div>
-        </section>
-    <div class="categories container--l">
-        <article class="categories__card">
-            <a href=""><h2>Böcker</h2></a>
+            <div class="carousel-nav" data-flickity='{ "asNavFor": ".main-product__carousel", "cellAlign": "left", "prevNextButtons": false, "contain": true,"pageDots": false, "wrapAround": false, "draggable": false  }'>
+                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
+                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
+                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
+            </div>
+            
+            
+
         </article>
-        <article class="categories__card">
-            <a href=""><h2>Spel</h2></a>
+        <article class="main-product__info">
+            <h1>Smart 10</h1>
+            <hr class="hr--gray--small--left">
+            <div class="main-product__price">
+                <p class="main-product__price--original">599 SEK</p>
+                <p class="main-product__price--current"><span>400</span> SEK</p>
+            </div>
+            <p class="main-product__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod facilis error molestiae dolorum accusamus iste pariatur, perferendis natus fuga.</p>
+            <div class="main-product__input">
+                <input type="number" name="antal" id="antal" value="1">
+                <button class="button--primary--blue">Lägg i kundvagn</button>
+            </div>
+            <div class="main-product__payment-badge">
+                <p>Betalningsalternativ</p>
+                <img src="./img/trustbadge.svg" class="trustbadge" alt="Betalningsalternativ">
+            </div>
+            <div class="main-product__meta">
+                <p><strong class="main-product__meta--title">Författare:</strong> Fredrik Eklund</p>
+                <p>ISBN: 10321031</p>
+                <p>Utgivningsår: 2020</p>
+            </div>
         </article>
-        <article class="categories__card">
-            <a href=""><h2>Pussel</h2></a>
-        </article>
-    </div>
+     </section>
+    <!-- Products -->
     <hr class="hr--gray">
     <section class="products container--l">
-        <h2>Nya produkter</h2>
+        <h2>Liknande produkter</h2>
         <hr>
         <div class="products__container">
             <article class="product-card">
                 <div class="product-card__image--box">
-                    <a href="./produkt1.html"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
                         <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
@@ -156,7 +182,7 @@
 
         </div>
     </section>
-    </main>    
+    </main>
     <footer>
         <div class="container--l grid--two-column">
             <div class="footer__contact">
