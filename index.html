@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book & Dice</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__top-bar">
+            <p class="small"><i class="ri-truck-line"></i> Fri frakt från 699 SEK</p>
+        </div>
+        <div class="header__main">
+            <div class="header__main--flex container--l">
+                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/Book & dice Test gul.png" alt="Färdtjänst logo"></a>
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <!-- Close Menu Button -->
+                    <button class="menu__btn close" id="close-menu" aria-label="Stäng meny">
+                        <span class="menu__icon--close">
+                            <span class="bars cross1"></span>
+                            <span class="bars cross2"></span>
+                        </span>
+                    </button>
+                    <!-- Navigation List -->
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
+                        <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
+                        <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
+                        <!-- <li class="nav__item"><a href="minasidor.html" class="nav__link"> Mina sidor</a></li> -->
+                    </ul>
+                </nav>
+                <div class="header__main--icon-wrapper">
+                    <!-- Menu Button -->
+                    <button class="menu__btn open" id="open-menu" aria-label="Öppna meny">
+                        <span class="menu__icon--open">
+                            <span class="bars"></span>
+                            <span class="bars"></span>
+                            <span class="bars"></span>
+                        </span>
+                    </button>
+                    <!-- Cart Icon -->
+                    <a href="#" class="header__main--cart"><i class="ri-shopping-cart-2-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-carousel">
+            <div class="carousel-cell">
+                <div class="carousel__textbox container--l">
+                    <h1>Book & Dice</h1>
+                    <h2>Rean har startat</h2>
+                    <a href="#" class="button--primary carousel__button">Visa produkter</a>
+                </div>
+                <img src="./img/michal-parzuchowski-geNNFqfvw48-unsplash.jpg" class="carousel__image" alt="">
+
+            </div>
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
