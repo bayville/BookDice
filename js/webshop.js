@@ -6,7 +6,7 @@
 * Har du gjort ändringar i denna fil ska detta beskrivas här i sidhuvudet.
 * 
 * Ändringar gjorda: 
-* Bytte :- till SEK, la till &shy; innan SEK i tabellen för kassan
+* Bytte :- till SEK, la till &thinsp; innan SEK i tabellen för kassan
 *  
 *
 */
@@ -312,7 +312,7 @@ function showCheckout() {
                     "<td>" + artId + "</td>" +
                     "<td>" + artName + "</td>" +
                     "<td>" + numItems + " st.</td>" +
-                    "<td>" + itemSumCost + " &shy;SEK</td>" + //Bytt till SEK från :- +&shy; innan SEK
+                    "<td>" + itemSumCost + " &thinsp;SEK</td>" + //Bytt till SEK från :- +&thinsp; innan SEK
                     "</tr>";
             }
 
