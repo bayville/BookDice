@@ -342,6 +342,7 @@ hr{
 
 .categories__card{
     min-width: 200px;
+    min-height: 380px;
     padding:3rem 0;
     background-color: var(--product--background);
     border: 10px solid var(--product--background);
