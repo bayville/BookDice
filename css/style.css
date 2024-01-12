@@ -614,7 +614,9 @@ hr{
 
 
 /* About page */
-
+.about h2{
+    color: var(--main-color);
+}
 .about__body{
     max-width: 60ch;
     margin: 0;
@@ -626,7 +628,6 @@ hr{
 .cart__table{
     width: 100%;
     border-collapse: collapse;
-    
 }
 
 .cart__table--head{
