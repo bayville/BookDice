@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hem - Book & Dice</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +22,7 @@
         </div>
         <div class="header__main">
             <div class="header__main--flex container--l">
-                <a href="index.html" class="header__logo--link"><img src="./img/bd-logo-yellow.svg" width="200" class="header--logo" alt="Färdtjänst logo"></a>
+                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/bd-logo-yellow.svg" alt="Book & Dice logo"></a>
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
@@ -33,7 +37,7 @@
                         <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
                         <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
                         <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
-                        <li class="nav__item"><a href="pussels.html" class="nav__link">Pussel</a></li>
+                        <li class="nav__item"><a href="puzzles.html" class="nav__link">Pussel</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
                     </ul>
                 </nav>
@@ -47,7 +51,10 @@
                         </span>
                     </button>
                     <!-- Cart Icon -->
-                    <a href="#" class="header__main--cart"><i class="ri-shopping-cart-2-line"></i></a>
+                    <a href="./checkout.html" class="header__main--cart">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span class="items-in-basket smallest"></span>
+                    </a>                
                 </div>
             </div>
         </div>
@@ -57,8 +64,8 @@
             <div class="carousel-cell">
                 <div class="carousel__textbox container--l">
                     <h1>Book & Dice</h1>
-                    <h2>Rean har startat</h2>
-                    <a href="#" class="button--primary carousel__button">Visa produkter</a>
+                    <h2>Nya spel i sortimentet</h2>
+                    <a href="./games.html" class="button--primary carousel__button">Visa produkter</a>
                 </div>
                 <picture>
                     <!-- load webp in different sizes if browser supports it -->
@@ -82,17 +89,47 @@
                                 100vw"
                         src="./img/hero_1-l.jpg" 
                 
-                        alt="image description"
+                        alt="Spel liggandes på bord"
                         class="carousel__image">
                 </picture>
             </div>
-            <div class="carousel-cell">...</div>
-            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">
+                <div class="carousel__textbox container--l">
+                    <h2>Crime Scene: Helsingfors</h2>
+                    <p class="carousel__textbox--body">Lägg ihop bevisen och lös brottet</p>
+                    <a href="./produkt4.html" class="button--primary carousel__button">Visa spelet</a>
+                </div>
+                <picture>
+                    <!-- load webp in different sizes if browser supports it -->
+                    <source type="image/webp"
+                        sizes=" (max-width: 500px) 500px,
+                                (max-width: 768px) 768px,
+                                (max-width: 1024px) 1024px"
+                        srcset="
+                          ./img/hero-1-s.webp 500w,
+                          ./img/hero-1-m.webp 768w,
+                          ./img/hero-1-l.webp 1024w"
+                        >
+                    <!-- fallback on original src. -->
+                    <img 
+                        srcset="./img/hero-1-l.jpg 1024w, 
+                                ./img/hero-1-m.jpg 768w,
+                                ./img/hero-1-s.jpg 500w"
+                        sizes=" (max-width: 500px) 500px,
+                                (max-width: 768px) 768px,
+                                (max-width: 1024px) 1024px,
+                                100vw"
+                        src="./img/hero_1-l.jpg" 
+                
+                        alt="Spel liggandes på bord"
+                        class="carousel__image">
+                </picture>
+            </div>
         </section>
     <div class="categories container--l">
             <a href="./books.html" class="categories__card"><h2>Böcker</h2></a>
             <a href="./games.html" class="categories__card"><h2>Spel</h2></a>
-            <a href="./pussles.html" class="categories__card"><h2>Pussel</h2></a>
+            <a href="./puzzles.html" class="categories__card"><h2>Pussel</h2></a>
     </div>
     <!-- Products section-->
     <section class="products container--l">
@@ -110,7 +147,7 @@
                         <!-- fallback on original src. -->
                         <img srcset="./img/produkt-1.jpg"
                             src="./img/produkt-1.jpg"
-                            alt="Projektledning bok"
+                            alt="Projektledning omslag bok"
                             class="product__image">
                     </picture></a>
                 </div>
@@ -134,14 +171,14 @@
                         <!-- fallback on original src. -->
                         <img srcset="./img/produkt-2.jpg"
                             src="./img/produkt-2.jpg"
-                            alt="The non designers design book"
+                            alt="The non designers design book omslag"
                             class="product__image">
                     </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
                         <a href="./books.html" class="product-card__title--tag small">Böcker</a>
-                        <a href="./produkt2" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
+                        <a href="./produkt2.html" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
@@ -157,7 +194,7 @@
                         <!-- fallback on original src. -->
                         <img srcset="./img/produkt-3.jpg"
                             src="./img/produkt-3.jpg"
-                            alt="Dark stories spel"
+                            alt="Black stories spel"
                             class="product__image">
                     </picture></a>
                 </div>
@@ -168,8 +205,8 @@
                     </div>
                 </div>
                     <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
+                        <p class="product-card__price--original small">69 SEK</p>
+                        <p class="product-card__price--current"><span>49</span> SEK</p>
                     </div>
             </div>
             <!-- Product 4 -->
@@ -188,12 +225,12 @@
                 <div class="product-card__info">
                     <div class="product-card__text">
                         <a href="./games.html" class="product-card__title--tag small">Spel</a>
-                        <a href="./produkt4.html" class="product-card__text--link"><p class="product-card__title-name">Dark stories - Helsingfors 2012</p></a>
+                        <a href="./produkt4.html" class="product-card__text--link"><p class="product-card__title-name">Crime Scene: Helsingfors 2012</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
+                        <p class="product-card__price--original small">199 SEK</p>
+                        <p class="product-card__price--current"><span>169</span> SEK</p>
                     </div>
             </div>
         </div>
@@ -230,6 +267,8 @@
         </div>
     </footer>
     <script src="./js/flickity.pkgd.min.js"></script>
+    <script src="./js/webshop.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book & Dice</title>
+    <title>Kassa - Book & Dice</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,7 +35,7 @@
                     <!-- Navigation List -->
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
-                        <li class="nav__item"><a href="books.html" class="nav__link--active">Böcker</a></li>
+                        <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
                         <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
                         <li class="nav__item"><a href="puzzles.html" class="nav__link">Pussel</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
@@ -63,77 +63,31 @@
     <!-- Breadcrumbs -->
      <div class="breadcrumbs container--l">
         <p class="breadcrumbs__text small">
-            <a href="index.html"><span>Hem</span></a> / <span>Böcker</span>
+            <a href="index.html"><span>Hem</span></a> / <span>Kassa</span>
         </p>
      </div>
-    <!-- Products -->
-    <section class="products container--l">
-        <h1 class="categories__title">Böcker</h1>
-        <hr>
-                <!-- Products grid -->
-                <div class="products__container">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <div class="product-card__image--box">
-                            <a href="./produkt1.html"><picture>
-                                <!-- load webp in different sizes if browser supports it -->
-                                <source type="image/webp" srcset="./img/produkt-1.webp">
-                                <!-- fallback on original src. -->
-                                <img srcset="./img/produkt-1.jpg"
-                                    src="./img/produkt-1.jpg"
-                                    alt="Projektledning bok"
-                                    class="product__image">
-                            </picture></a>
-                        </div>
-                        <div class="product-card__info">
-                            <div class="product-card__text">
-                                <a href="./books.html" class="product-card__title--tag small">Böcker</a>
-                                <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Projektledning</p></a>
-                            </div>
-                        </div>
-                            <div class="product-card__price">
-                                <p class="product-card__price--original small">599 SEK</p>
-                                <p class="product-card__price--current"><span>400</span> SEK</p>
-                            </div>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <div class="product-card__image--box">
-                            <a href="./produkt2.html"><picture>
-                                <!-- load webp in different sizes if browser supports it -->
-                                <source type="image/webp" srcset="./img/produkt-2.webp">
-                                <!-- fallback on original src. -->
-                                <img srcset="./img/produkt-2.jpg"
-                                    src="./img/produkt-2.jpg"
-                                    alt="The non designers design book"
-                                    class="product__image">
-                            </picture></a>
-                        </div>
-                        <div class="product-card__info">
-                            <div class="product-card__text">
-                                <a href="./books.html" class="product-card__title--tag small">Böcker</a>
-                                <a href="./produkt2.html" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
-                            </div>
-                        </div>
-                            <div class="product-card__price">
-                                <p class="product-card__price--current"><span>270</span> SEK</p>
-                            </div>
-                    </div>
-        </div>
-    </section>
-    <hr class="hr--gray">
-    <section class="cta">
-        <div class="container--l">
-            <h2>Missa inte en nyhet</h2>
-            <p class="cta__text">Prenumerera på vårt nyhetsbrev för att vara först med de senaste nyheterna och ta del av de bästa erbjudandena.</p>
-            <form id="newsletter__form" action="">
-                <label for="email">E-postadress:</label>
-                <input type="email" name="Epostadress" id="email">
-                <button type="submit" class="button--primary--blue">Prenumerera</button>
-            </form>
+     
+     <section class="cart container--l">
+        <h1 class="categories__title">Kassa</h1>
 
-        </div>
-    </section>
+        <table class="cart__table">
+            <thead class="cart__table--head">
+                <tr>
+                    <td>Bild</td>
+                    <td>Artikelnr</td>
+                    <td>Varunamn</td>
+                    <td>Antal</td>
+                    <td>Pris</td>
+                </tr>
+            </thead>
+            <tbody id="checkout" class="small"></tbody>
+        </table>
+     </section>
+     
+     <div class="payment container--l">
+        <button class="button--primary--blue" onclick="checkoutBasket()">Genomför köp</button>
+        <button class="button--secondary--blue" onclick="emptyBasket()">Rensa varukorg</button>
+    </div>
     </main>
     <footer>
         <div class="container--l grid--two-column">
@@ -155,6 +109,5 @@
     <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/webshop.js"></script>
     <script src="./js/main.js"></script>
-pt>
 </body>
 </html>

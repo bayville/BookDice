@@ -36,9 +36,9 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
                         <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
-                        <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
+                        <li class="nav__item"><a href="games.html" class="nav__link--active">Spel</a></li>
                         <li class="nav__item"><a href="puzzles.html" class="nav__link">Pussel</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link--active">Om oss</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
                     </ul>
                 </nav>
                 <div class="header__main--icon-wrapper">
@@ -54,7 +54,7 @@
                     <a href="./checkout.html" class="header__main--cart">
                         <i class="ri-shopping-cart-2-line"></i>
                         <span class="items-in-basket smallest"></span>
-                    </a>                
+                    </a>
                 </div>
             </div>
         </div>
@@ -63,81 +63,16 @@
     <!-- Breadcrumbs -->
      <div class="breadcrumbs container--l">
         <p class="breadcrumbs__text small">
-            <a href="index.html"><span>Hem</span></a> / <span>Om oss</span>
+            <a href="index.html"><span>Hem</span></a> / <span>Spel</span>
         </p>
      </div>
-     
-     <section class="about container--l">
-        <h1 class="categories__title">Om oss</h1>
-        <hr>
-        <h2>Om Book & Dice</h2>
-        <p class="about__body">
-            Välkommen till Book & Dice - din butik för böcker, spel och pussel. Namnet kommer från vår kärlek till just det. 
-            Vi vill ge dig glädje genom böcker och bidra till roliga och härliga stunder med nära och kära genom spel och pussel.</p>
-        <h2>Om mig som utvecklare</h2>
-        <p class="about__body">
-            Mitt namn är Fredrik Eklund, och det är jag som har utvecklat denna webbplats. 
-            Jag har alltid varit intresserad av datorer och IT i allmänhet och har drömt om att få arbeta inom detta område. 
-            Webbutveckling är oerhört roligt, eftersom det kombinerar programmering, design och skapandet av användarupplevelser, 
-            och det är därför jag valt att studera webbutveckling.
-        </p>
-        
-     </section>
-    <!-- Products section-->
+    <!-- Products -->
     <section class="products container--l">
-        <hr class="hr--gray">
-        <h2>Nya produkter</h2>
+        <h1 class="categories__title">Spel</h1>
         <hr>
         <!-- Products grid -->
         <div class="products__container">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-card__image--box">
-                    <a href="./produkt1.html"><picture>
-                        <!-- load webp in different sizes if browser supports it -->
-                        <source type="image/webp" srcset="./img/produkt-1.webp">
-                        <!-- fallback on original src. -->
-                        <img srcset="./img/produkt-1.jpg"
-                            src="./img/produkt-1.jpg"
-                            alt="Projektledning omslag bok"
-                            class="product__image">
-                    </picture></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
-                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Projektledning</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </div>
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-card__image--box">
-                    <a href="./produkt2.html"><picture>
-                        <!-- load webp in different sizes if browser supports it -->
-                        <source type="image/webp" srcset="./img/produkt-2.webp">
-                        <!-- fallback on original src. -->
-                        <img srcset="./img/produkt-2.jpg"
-                            src="./img/produkt-2.jpg"
-                            alt="The non designers design book omslag"
-                            class="product__image">
-                    </picture></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
-                        <a href="./produkt2.html" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--current"><span>270</span> SEK</p>
-                    </div>
-            </div>
-            <!-- Product 3 -->
+        <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-card__image--box">
                     <a href="./produkt3.html"><picture>
@@ -192,7 +127,7 @@
         <div class="container--l">
             <h2>Missa inte en nyhet</h2>
             <p class="cta__text">Prenumerera på vårt nyhetsbrev för att vara först med de senaste nyheterna och ta del av de bästa erbjudandena.</p>
-            <form id="newsletter__form" action="">
+            <form id="newsletter__form" action="#">
                 <label for="email">E-postadress:</label>
                 <input type="email" name="Epostadress" id="email">
                 <button type="submit" class="button--primary--blue">Prenumerera</button>
@@ -220,6 +155,6 @@
     </footer>
     <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/webshop.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

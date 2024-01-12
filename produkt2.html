@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book & Dice</title>
+    <title>The non designers handbook - Book & Dice</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +18,11 @@
 <body>
     <header>
         <div class="header__top-bar">
-            <p class="small"><i class="ri-truck-line"></i> Fri frakt från 699 SEK</p>
+            <p class="small"><i class="ri-truck-line"></i> Alltid fri frakt</p>
         </div>
         <div class="header__main">
             <div class="header__main--flex container--l">
-                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/bd-logo-yellow.svg" alt="Färdtjänst logo"></a>
+                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/bd-logo-yellow.svg" alt="Book & Dice logo"></a>
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
@@ -30,10 +34,10 @@
                     </button>
                     <!-- Navigation List -->
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
                         <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
                         <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
-                        <li class="nav__item"><a href="pussels.html" class="nav__link">Pussel</a></li>
+                        <li class="nav__item"><a href="puzzles.html" class="nav__link">Pussel</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
                     </ul>
                 </nav>
@@ -47,7 +51,10 @@
                         </span>
                     </button>
                     <!-- Cart Icon -->
-                    <a href="#" class="header__main--cart"><i class="ri-shopping-cart-2-line"></i></a>
+                    <a href="./checkout.html" class="header__main--cart">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span class="items-in-basket smallest"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -100,8 +107,7 @@
             <p class="main-product__info--text">
                 I 20 år har Robin Williams lärt både formgivare och icke-formgivare grundläggande principer för bra design. Den fjärde upplagan av "The Non-Designer’s Design Book" ger ännu mer praktisk rådgivning, inklusive ett nytt kapitel om typografi, fler övningar för att träna din designeröga och uppdaterade projekt. Boken innehåller också nya visuella och typografiska exempel för att inspirera din kreativitet.</p>
             <div class="main-product__input">
-                <input type="number" aria-label="antal" name="antal" id="antal" value="1">
-                <button class="button--primary--blue">Lägg i kundvagn</button>
+                <button class="button--primary--blue" onclick="addToBasket(this, '1-002','The Non-Designers Design Book', 270, './img/produkt-2-xs.jpg', true)"><i class="ri-shopping-cart-2-line"></i> Lägg i kundvagnen</button>
             </div>
             <div class="main-product__payment-badge">
                 <p>Betalningsalternativ</p>
@@ -120,14 +126,23 @@
         <h2>Liknande produkter</h2>
         <hr>
         <div class="products__container">
+            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="./produkt1.html"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-1.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-1.jpg"
+                            src="./img/produkt-1.jpg"
+                            alt="Projektledning bok"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Projektledning</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
@@ -135,49 +150,27 @@
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
             </div>
+            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="./produkt2.html"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-2.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-2.jpg"
+                            src="./img/produkt-2.jpg"
+                            alt="The non designers design book"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                        <a href="./produkt2.html" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
+                        <p class="product-card__price--current"><span>270</span> SEK</p>
                     </div>
             </div>
         </div>
@@ -214,6 +207,7 @@
         </div>
     </footer>
     <script src="./js/flickity.pkgd.min.js"></script>
+    <script src="./js/webshop.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
