@@ -123,13 +123,21 @@ function showBasket() {
             }
         }
     }
-    // Visa antal
-    if (document.getElementsByClassName("items-in-basket")) {
-        for (let i = 0; i < itemsInBasketEl.length; i++) {
-            itemsInBasketEl[i].innerHTML = numOfItems;
-        }
-    }
+   
 
+    //Visa antal
+    if (document.getElementsByClassName("items-in-basket")) {
+    for (let i = 0; i < itemsInBasketEl.length; i++) {
+        itemsInBasketEl[i].innerHTML = numOfItems;
+     }
+    } 
+    
+
+
+
+    
+
+ 
     // Visa totalsumma
     if (document.getElementsByClassName("total-sum")) {
         for (let i = 0; i < totalSumEl.length; i++) {
