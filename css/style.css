@@ -335,6 +335,7 @@ hr{
 }
 
 .categories a{
+    display: block;
     text-decoration: none;
     color: var(--main-color);
     height: 100%;

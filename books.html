@@ -55,7 +55,7 @@
     <main>
     <!-- Breadcrumbs -->
      <div class="breadcrumbs container--l">
-        <p class="breadcrumbs__text">
+        <p class="breadcrumbs__text small">
             <a href="index.html"><span>Hem</span></a> / <span>Böcker</span>
         </p>
      </div>
@@ -63,67 +63,55 @@
     <section class="products container--l">
         <h1 class="categories__title">Böcker</h1>
         <hr>
-        <div class="products__container">
-            <article class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                <!-- Products grid -->
+                <div class="products__container">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-card__image--box">
+                            <a href="./produkt1.html"><picture>
+                                <!-- load webp in different sizes if browser supports it -->
+                                <source type="image/webp" srcset="./img/produkt-1.webp">
+                                <!-- fallback on original src. -->
+                                <img srcset="./img/produkt-1.jpg"
+                                    src="./img/produkt-1.jpg"
+                                    alt="Projektledning bok"
+                                    class="product__image">
+                            </picture></a>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__text">
+                                <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                                <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Projektledning</p></a>
+                            </div>
+                        </div>
+                            <div class="product-card__price">
+                                <p class="product-card__price--original small">599 SEK</p>
+                                <p class="product-card__price--current"><span>400</span> SEK</p>
+                            </div>
                     </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-card__image--box">
+                            <a href="./produkt2.html"><picture>
+                                <!-- load webp in different sizes if browser supports it -->
+                                <source type="image/webp" srcset="./img/produkt-2.webp">
+                                <!-- fallback on original src. -->
+                                <img srcset="./img/produkt-2.jpg"
+                                    src="./img/produkt-2.jpg"
+                                    alt="The non designers design book"
+                                    class="product__image">
+                            </picture></a>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__text">
+                                <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                                <a href="./produkt2" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
+                            </div>
+                        </div>
+                            <div class="product-card__price">
+                                <p class="product-card__price--current"><span>270</span> SEK</p>
+                            </div>
                     </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </article>
-            <article class="product-card">
-                <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
-                </div>
-                <div class="product-card__info">
-                    <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
-                    </div>
-                </div>
-                    <div class="product-card__price">
-                        <p class="product-card__price--original small">599 SEK</p>
-                        <p class="product-card__price--current"><span>400</span> SEK</p>
-                    </div>
-            </article>
         </div>
     </section>
     <hr class="hr--gray">
