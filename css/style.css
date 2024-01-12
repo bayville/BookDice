@@ -539,6 +539,7 @@ hr{
 
 .main-product__gallery--image{
     width: 30%;
+    height: auto;
     cursor: pointer;
 }
 
