@@ -33,6 +33,7 @@
                         <li class="nav__item"><a href="index.html" class="nav__link--active">Hem</a></li>
                         <li class="nav__item"><a href="books.html" class="nav__link">Böcker</a></li>
                         <li class="nav__item"><a href="games.html" class="nav__link">Spel</a></li>
+                        <li class="nav__item"><a href="pussels.html" class="nav__link">Pussel</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link">Om oss</a></li>
                     </ul>
                 </nav>
@@ -59,8 +60,31 @@
                     <h2>Rean har startat</h2>
                     <a href="#" class="button--primary carousel__button">Visa produkter</a>
                 </div>
-                <img src="./img/michal-parzuchowski-geNNFqfvw48-unsplash.jpg" class="carousel__image" alt="">
-
+                <picture>
+                    <!-- load webp in different sizes if browser supports it -->
+                    <source type="image/webp"
+                        sizes=" (max-width: 500px) 500px,
+                                (max-width: 768px) 768px,
+                                (max-width: 1024px) 1024px"
+                        srcset="
+                          ./img/hero-1-s.webp 500w,
+                          ./img/hero-1-m.webp 768w,
+                          ./img/hero-1-l.webp 1024w"
+                        >
+                    <!-- fallback on original src. -->
+                    <img 
+                        srcset="./img/hero-1-l.jpg 1024w, 
+                                ./img/hero-1-m.jpg 768w,
+                                ./img/hero-1-s.jpg 500w"
+                        sizes=" (max-width: 500px) 500px,
+                                (max-width: 768px) 768px,
+                                (max-width: 1024px) 1024px,
+                                100vw"
+                        src="./img/hero_1-l.jpg" 
+                
+                        alt="image description"
+                        class="carousel__image">
+                </picture>
             </div>
             <div class="carousel-cell">...</div>
             <div class="carousel-cell">...</div>
