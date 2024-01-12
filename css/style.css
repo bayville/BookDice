@@ -201,6 +201,7 @@ hr{
 .header__top-bar p{
     margin: 0;
     color: var(--main-color);
+    font-weight: 700;
 }
 
 /* Navigation */
