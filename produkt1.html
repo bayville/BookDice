@@ -65,40 +65,53 @@
         <div class="main-product__images">
             <div>
                 <div class="main-product__carousel" data-flickity='{"cellAlign": "center", "contain": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
-                    <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
-                    <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
+                    <div class="main-product__carousel--image"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-1.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-1.jpg"
+                            src="./img/produkt-1.jpg"
+                            alt="Projektledning omslag bok"
+                            class="product__image">
+                    </picture></div>
+                    <div class="main-product__carousel--image"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-1-2.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-1-2.jpg"
+                            src="./img/produkt-1-2.jpg"
+                            alt="Projektledning baksida bok"
+                            class="product__image">
+                    </picture></div>
                     <div class="main-product__carousel--image"><img src="./img/Product_1.jpg" alt=""></div>
                 </div>
             </div>
             <div class="carousel-nav" data-flickity='{ "asNavFor": ".main-product__carousel", "cellAlign": "left", "prevNextButtons": false, "contain": true,"pageDots": false, "wrapAround": false, "draggable": false  }'>
-                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
-                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
-                <img class="main-product__gallery--image" src="./img/Product_1.jpg" alt="">
+                <img class="main-product__gallery--image" src="./img/produkt-1-xs.jpg" alt="Projektledning omslag bok">
+                <img class="main-product__gallery--image" src="./img/produkt-1-2-xs.jpg" alt="Projektledning baksida bok">
             </div>
-            
-            
-
         </div>
+        <!-- Product info -->
         <div class="main-product__info">
-            <h1>Smart 10</h1>
+            <h1>Projektledning</h1>
             <hr class="hr--gray--small--left">
             <div class="main-product__price">
                 <p class="main-product__price--original">599 SEK</p>
                 <p class="main-product__price--current"><span>400</span> SEK</p>
             </div>
-            <p class="main-product__info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod facilis error molestiae dolorum accusamus iste pariatur, perferendis natus fuga.</p>
+            <p class="main-product__info--text">Projektledning tar ett helhetsgrepp på området projektledning och riktar sig till alla som styr och leder projekt, oavsett bransch och organisation. Boken behandlar projektmetodiken och ledarskapet på ett tydligt och begripligt sätt, vilket gör den lätt att använda som lärobok på högskolor, universitet och affärsskolor, handbok vid praktiskt projektarbete och strategisk portföljhantering på ledningsnivå samt vid certifieringar.Projektledning är ett område som hela tiden utvecklas.</p>
             <div class="main-product__input">
                 <input type="number" aria-label="antal" name="antal" id="antal" value="1">
                 <button class="button--primary--blue">Lägg i kundvagn</button>
             </div>
             <div class="main-product__payment-badge">
                 <p>Betalningsalternativ</p>
-                <img src="./img/trustbadge.svg" class="trustbadge" alt="Betalningsalternativ">
+                <img src="./img/trustbadge.png" class="trustbadge" alt="Betalningsalternativ">
             </div>
             <div class="main-product__meta">
-                <p><strong class="main-product__meta--title">Författare:</strong> Fredrik Eklund</p>
-                <p>ISBN: 10321031</p>
-                <p>Utgivningsår: 2020</p>
+                <p><strong class="main-product__meta--title">Författare:</strong> Bo Tonnquist</p>
+                <p><strong class="main-product__meta--title">ISBN:</strong> 9789152360804</p>
+                <p><strong class="main-product__meta--title">Utgivningsår:</strong> 2021</p>
             </div>
         </div>
      </section>

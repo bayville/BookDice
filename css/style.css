@@ -271,7 +271,7 @@ hr{
 
 .ri-shopping-cart-2-line{
     font-size: 1.5rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 
@@ -327,7 +327,7 @@ hr{
 .categories{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
-    margin-top: 4em;
+    margin-top: 2em;
     text-align: center;
     text-transform: uppercase;
     color: var(--main-color);
@@ -489,6 +489,7 @@ hr{
     gap:0.2rem;
 }
 
+
 .main-product__gallery--image{
     width: 30%;
     cursor: pointer;
@@ -502,6 +503,7 @@ hr{
     margin-left: 1rem;
 }
 
+/* Single product info */
 .main-product__info{
     max-width: 400px;
 }
@@ -530,7 +532,7 @@ hr{
 
 .main-product__info--text{
     margin: 0;
-    max-width: 50ch;
+    max-width: 60ch;
 }
 
 .main-product__input{

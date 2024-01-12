@@ -18,7 +18,7 @@
         </div>
         <div class="header__main">
             <div class="header__main--flex container--l">
-                <a href="index.html" class="header__logo--link"><img class="header--logo" src="./img/bd-logo-yellow.svg" alt="Färdtjänst logo"></a>
+                <a href="index.html" class="header__logo--link"><img src="./img/bd-logo-yellow.svg" width="200px" class="header--logo" alt="Färdtjänst logo"></a>
                 <!-- Navigation -->
                 <nav class="nav" id="nav">
                     <!-- Close Menu Button -->
@@ -100,71 +100,109 @@
             <a href=""><h2>Pussel</h2></a>
         </article>
     </div>
-    <hr class="hr--gray">
+    <!-- Products section-->
     <section class="products container--l">
+        <hr class="hr--gray">
         <h2>Nya produkter</h2>
         <hr>
+        <!-- Products grid -->
         <div class="products__container">
-            <article class="product-card">
+            <!-- Product 1 -->
+            <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="./produkt1.html"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="./produkt1.html"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-1.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-1.jpg"
+                            src="./img/produkt-1.jpg"
+                            alt="Projektledning bok"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                        <a href="./produkt1.html" class="product-card__text--link"><p class="product-card__title-name">Projektledning</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="#"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-2.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-2.jpg"
+                            src="./img/produkt-2.jpg"
+                            alt="The non designers design book"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./books.html" class="product-card__title--tag small">Böcker</a>
+                        <a href="" class="product-card__text--link"><p class="product-card__title-name">The non designers design book</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="#"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-3.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-3.jpg"
+                            src="./img/produkt-3.jpg"
+                            alt="Dark stories spel"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./games.html" class="product-card__title--tag small">Spel</a>
+                        <a href="./produkt3" class="product-card__text--link"><p class="product-card__title-name">Dark stories</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
-            <article class="product-card">
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
                 <div class="product-card__image--box">
-                    <a href="#"><img src="./img/Product_1.jpg" class="product__image" alt=""></a>
+                    <a href="#"><picture>
+                        <!-- load webp in different sizes if browser supports it -->
+                        <source type="image/webp" srcset="./img/produkt-4.webp">
+                        <!-- fallback on original src. -->
+                        <img srcset="./img/produkt-4.jpg"
+                            src="./img/produkt-4.jpg"
+                            alt="Crime stories - Helsingfors 2012"
+                            class="product__image">
+                    </picture></a>
                 </div>
                 <div class="product-card__info">
                     <div class="product-card__text">
-                        <a href="" class="product-card__title--tag small">Spel</a>
-                        <a href="" class="product-card__text--link"><p class="product-card__title-name">Smart 10</p></a>
+                        <a href="./games.html" class="product-card__title--tag small">Spel</a>
+                        <a href="./produkt4" class="product-card__text--link"><p class="product-card__title-name">Dark stories - Helsingfors 2012</p></a>
                     </div>
                 </div>
                     <div class="product-card__price">
                         <p class="product-card__price--original small">599 SEK</p>
                         <p class="product-card__price--current"><span>400</span> SEK</p>
                     </div>
-            </article>
+            </div>
         </div>
     </section>
     <hr class="hr--gray">
