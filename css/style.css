@@ -607,6 +607,12 @@ hr{
     border-top: 2px dashed var(--product--background);
 }
 
+.main-product__video{
+    width: 100%;
+    height: auto;
+}
+
+
 /* Categories page */
 .categories__title{
     color: var(--main-color);
